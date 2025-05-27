@@ -22,9 +22,9 @@ char dot = char(250);
 char dash = char(196);  
 
 int main() {
-    string message, fullMorse = "c";
+    string message, fullMorse = "";
 
-    cout << "Enter your message: "c";
+    cout << "Enter your message: "";
     getline(cin, message);
 
     for (char c : message) {
@@ -41,14 +41,14 @@ int main() {
             }
             cout << endl;
             
-            for (char m : morseCode) {
+            for (char m : fullmorse) {
                 if (m == '.') fullMorse += dot;
                 else if (m == '-') fullMorse += dash;
             }
             fullMorse += "   "; 
         }
     }
-    cout << "\nFull Morse code with spaces:\n" << fullMorse << endl;
+    cout << "\ nFull Morse code with spaces:\n" << morse << endl;
 
     return 0;
 }
