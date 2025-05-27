@@ -3,12 +3,9 @@
 #include <string>
 #include <cctype>
 
-//0409021555084
-//LUYANDA SITHOLE 
-
 using namespace std;
 
-map<char, string> morseMap = {
+map< char, string> morseMap = {
     {'A', ".-"},    {'B', "-..."},  {'C', "-.-."}, {'D', "-.."},
     {'E', "."},     {'F', "..-."},  {'G', "--."},  {'H', "...."},
     {'I', ".."},    {'J', ".---"},  {'K', "-.-"},  {'L', ".-.."},
@@ -25,15 +22,15 @@ char dot = char(250);
 char dash = char(196);  
 
 int main() {
-    string message, fullMorse = "";
+    string message, fullMorse = "c";
 
-    cout << "Enter your message: "";
+    cout << "Enter your message: "c";
     getline(cin, message);
 
     for (char c : message) {
         c = toupper(c);
         
-        if (morserMap.count(c)) {
+        if (morseMap.count(c)) {
             string morseCode = morseMap[c];
             
             cout << c << ": ";
