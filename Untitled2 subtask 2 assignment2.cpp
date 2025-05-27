@@ -27,7 +27,7 @@ char dash = char(196);
 int main() {
     string message, fullMorse = "";
 
-    cout << "Enter your message: ";
+    cout << "Enter your message: "";
     getline(cin, message);
 
     for (char c : message) {
