@@ -33,7 +33,7 @@ int main() {
     for (char c : message) {
         c = toupper(c);
         
-        if (morseMap.count(c)) {
+        if (morserMap.count(c)) {
             string morseCode = morseMap[c];
             
             cout << c << ": ";
